@@ -1,4 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+
+definePageMeta({
+  middleware: 'auth'
+})
+
+</script>
+
+
 <template>
   <div>
     <h1 class="mb-4 text-xl font-bold">Welcome {user}</h1>
